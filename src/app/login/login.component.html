@@ -1,0 +1,31 @@
+<main>
+    <div class="heading">
+
+        <h2>Login Page</h2>
+    </div>
+    <br>
+    <div class="login">
+        <img src="/assets/image/login.jfif" alt="user logo" class="logo">
+        <form id="login" (ngSubmit)= "login()">
+            <label>
+                <strong>User Name</strong>
+            </label>
+            <input type="text" [(ngModel)]="username" name="uname" id="uname" placeholder="Username" required>
+            <br>
+            <br>
+            <label>
+                <strong>Password</strong>
+            </label>
+            <input type="Password" [(ngModel)] = "password" name="pass" id="pass" placeholder="Password" required>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="submit" name="log" id="log" value="Log In Here">
+            <br>
+            <br>
+
+        </form>
+    </div>
+</main>
+

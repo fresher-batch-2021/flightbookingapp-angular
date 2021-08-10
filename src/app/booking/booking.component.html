@@ -1,0 +1,46 @@
+<main>
+    <div class="depature_information">
+        <h2>Departure Information</h2>
+    </div>
+
+    <div>
+        <fieldset class="fieldset_table">
+            <legend></legend>
+            <form (ngSubmit)= "passenger_details()">
+                <table class="depature_table">
+                    <caption></caption>
+                    <tr>
+                        <th id="#">Flight</th>
+                        <th id="#">From</th>
+                        <th id="#">To</th>
+                        <th id="#">Price</th>
+                        <th id="#">Booking</th>
+                    </tr>
+                    <tr>
+                        <td>4000</td>
+                        <td id="from"></td>
+                        <td id="to"></td>
+                        <td>₹5200</td>
+                        <td><button  type="submit" value="submit">Book now</button></td>
+                    </tr>
+                    <tr>
+                        <td>4001</td>
+                        <td id="from_1"></td>
+                        <td id="to_1"></td>
+                        <td>₹5100</td>
+                        <td><button type="submit" value="submit">Book now</button></td>
+                    </tr>
+                    <tr>
+                        <td>4002</td>
+                        <td id="from_2"></td>
+                        <td id="to_2"></td>
+                        <td>₹5300</td>
+                        <td><button type="submit" value="submit">Book now</button></td>
+                    </tr>
+                    <tbody id="task_table"></tbody>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+    
+    </main>

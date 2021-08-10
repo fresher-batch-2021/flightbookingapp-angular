@@ -1,0 +1,95 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    
+    background-repeat: 100%; 
+    font-family:serif;  
+}  
+.login{  
+        width: 310px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: rgba(0, 0, 0, 0.8);  
+        border-radius: 15px ;
+        border:5px solid white;         
+          
+}  
+h2{  
+    text-align: center;  
+    color:  black;      
+    font-size: 40px;  
+}  
+label{  
+    color: white;  
+    font-size: 17px;  
+}  
+#name{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#mobile{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}
+#email{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}
+#uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+}
+#password{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+}
+#confirm{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+}
+#log{  
+    width: 100%;  
+    height: 100%;  
+    border: none;  
+    border-radius: 10px;  
+    padding-left: 7px;  
+    color:black;     
+    font-size: 25px;
+}  
+#log:hover{
+    background: #04AA6D;
+    color: white;
+}
+.logo {
+    border-radius: 50%;
+    position: absolute;
+    width: auto;
+    height: 20%;
+    right: 45%;
+    top: 30%;
+       
+
+}
