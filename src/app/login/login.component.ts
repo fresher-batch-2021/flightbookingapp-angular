@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import axios from 'axios';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -20,8 +20,23 @@ export class LoginComponent implements OnInit {
      }else if(this.password.length < 8){
        alert("password must be greater than 8 character")
      }else{
-       alert("sucessfully Registered")
-       window.location.href = "home"
+       
+       let url ="https://product-mock-api.herokuapp.com/flightapp/api/v1/auth/login";
+       let formData = {          
+        username: this.username,          
+        password: this.password
+        }
+        axios.post(url, formData).then(res=>{            
+          let data = res.data;
+          console.log(data);
+          alert("Successffully Login");          
+          window.location.href = "home"
+      }).catch(err=>{
+          let errorMessage = err.response.data.errorMessage;
+          console.error(errorMessage);
+          alert("Error-" + errorMessage);
+      });
+       
      }
    }
 

@@ -1,77 +1,77 @@
+<div class="body">
+<main>    
+        <header>
+            <div class="header">
+                <a class="nav_item" routerLink="/login">
+                    <strong>Login</strong></a>
 
-    <main>
-    
-    <header>
-        <div class="header">
-            <a class="nav_item" routerLink="/login">
-                <strong>Login</strong></a>
-            
-            <a class="nav_item" routerLink="/register">
-                <strong>Register</strong>
-            </a>
-        </div>
-    </header>
-    <br>
-    <br>
-    <fieldset class="fieldset">
-        <legend></legend>
-        <h1>Cheak availability for
-            <em>direction:</em>
-        </h1>
+                <a class="nav_item" routerLink="/register">
+                    <strong>Register</strong>
+                </a>
+            </div>
+        </header>
         <br>
-        <form  (ngSubmit)= "booking()">
-            <div class="col">
-                <span>
-                    <label for="from"><strong>FROM:</strong></label>
-                    <select name='from' class="from" required>
-                        <option value="">Select a location...</option>
-                        <option value="Cambodia">Cambodia</option>
-                        <option value="Hong Kong">Hong Kong</option>
-                        <option value="India">India</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Korea">Korea</option>
-                        <option value="Laos">Laos</option>
-                        <option value="Myanmar">Myanmar</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Vietnam">Vietnam</option>
-                    </select>
-                </span>
-            </div>
-            <div class="col">
-                <span>
-                    <label for="to"><strong>TO:</strong></label>
-                    <select name='to' class="to" required>
-                        <option value="">Select a location...</option>
-                        <option value="Cambodia">Cambodia</option>
-                        <option value="Hong Kong">Hong Kong</option>
-                        <option value="India">India</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Korea">Korea</option>
-                        <option value="Laos">Laos</option>
-                        <option value="Myanmar">Myanmar</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Vietnam">Vietnam</option>
-                    </select>
-                </span>
-            </div>
-            <br><br><br><br><br>
-            <div class="date">
-                <label for="departure"><strong>DEPATURE DATE:</strong></label>
-                <input type="date" name="depature" class="depature_date" required>
-            </div>
-            <div class="date">
-                <label for="return"><strong>RETURN DATE:</strong></label>
-                <input type="date" name="depature" class="return_date" required>
-            </div>
-            <br><br><br>
-            <div class="align">
-                <button type="submit" class="order_ticket">SEARCH</button>
+        <br>
+        <fieldset class="fieldset">
+            <legend></legend>
+            <h1>Cheak availability for
+                <em>direction:</em>
+            </h1>
+            <br>
+            <form (ngSubmit)="booking()">
+                <div class="col">
+                    <span>
+                        <label for="from"><strong>FROM:</strong></label>
+                        <select name='from' class="from" required>
+                            <option value="">Select a location...</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="India">India</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Korea">Korea</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Vietnam">Vietnam</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="col">
+                    <span>
+                        <label for="to"><strong>TO:</strong></label>
+                        <select name='to' class="to" required>
+                            <option value="">Select a location...</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="India">India</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Korea">Korea</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Vietnam">Vietnam</option>
+                        </select>
+                    </span>
+                </div>
+                <br><br><br><br><br>
+                <div class="date">
+                    <label for="departure"><strong>DEPATURE DATE:</strong></label>
+                    <input type="date" name="depature" class="depature_date" required>
+                </div>
+                <div class="date">
+                    <label for="return"><strong>RETURN DATE:</strong></label>
+                    <input type="date" name="depature" class="return_date" required>
+                </div>
+                <br><br><br>
+                <div class="align">
+                    <button type="submit" class="order_ticket">SEARCH</button>
 
-            </div>
+                </div>
 
-        </form>
-    </fieldset>
+            </form>
+        </fieldset>
     
-    </main>
+</main>
+</div>

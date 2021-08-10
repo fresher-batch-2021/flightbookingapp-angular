@@ -5,42 +5,42 @@
     <br>
     <div class="login">
         <img src="/assets/image/login.jfif" alt="user logo" class="logo">
-        <form id="login" action="login.html" onsubmit="register()">
+        <form id="login" action="login.html" (ngSubmit)= "register_details()">
             <label>
                 <strong>Name</strong>
             </label>
             <br>
-            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="text" [(ngModel)]="name" name="name" id="name" placeholder="Name">
             <br>
             <br>
             <label>
                 <strong>Mobile Number:</strong>
             </label>
-            <input type="tel" name="mobile_number" id="mobile" placeholder="Mobile number" pattern="[0-9]{10}">
+            <input type="tel" [(ngModel)]="mobile_number" name="mobile_number" id="mobile" placeholder="Mobile number" pattern="[0-9]{10}">
             <br>
             <br>
             <label>
                 <strong>Email ID:</strong>
             </label>
-            <input type="email" name="email_id" id="email" placeholder="Mail ID">
+            <input type="email" [(ngModel)]="email" name="email_id" id="email" placeholder="Mail ID">
             <br>
             <br>
             <label>
                 <strong>User Name</strong>
             </label>
-            <input type="text" name="Uname" id="uname" placeholder="Username">
+            <input type="text" [(ngModel)]="user_name" name="username" id="username" placeholder="Username">
             <br>
             <br>
             <label>
                 <strong>Password</strong>
             </label>
-            <input type="password" name="password" id="password" placeholder="Password" minlength="8">
+            <input type="password" [(ngModel)]="password" name="password" id="password" placeholder="Password" minlength="8">
             <br>
             <br>
             <label>
                 <strong>Confirm Password</strong>
             </label>
-            <input type="password" name="confirm_password" id="confirm" placeholder="Confirm Password"
+            <input type="password" [(ngModel)]="confirm_password" name="confirm_password" id="confirm" placeholder="Confirm Password"
                 minlength="8">
             <br>
             <br>
