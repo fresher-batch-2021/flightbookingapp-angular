@@ -29,8 +29,9 @@ export class LoginComponent implements OnInit {
         axios.post(url, formData).then(res=>{            
           let data = res.data;
           console.log(data);
-          alert("Successffully Login");          
-          window.location.href = "home"
+          alert("Successffully Login");
+          this.passing_username();          
+          window.location.href = "homepage"
       }).catch(err=>{
           let errorMessage = err.response.data.errorMessage;
           console.error(errorMessage);
@@ -39,5 +40,12 @@ export class LoginComponent implements OnInit {
        
      }
    }
-
+   passing_username(){
+     let userName_data = {
+       username: this.username
+     }
+     console.log(userName_data);
+     localStorage.setItem('user',JSON.stringify(userName_data));
+     
+   }
 }

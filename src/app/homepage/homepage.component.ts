@@ -1,17 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-passenger-details',
-  templateUrl: './passenger-details.component.html',
-  styleUrls: ['./passenger-details.component.css']
+  selector: 'app-homepage',
+  templateUrl: './homepage.component.html',
+  styleUrls: ['./homepage.component.css']
 })
-export class PassengerDetailsComponent implements OnInit {
+export class HomepageComponent implements OnInit {
+
   userName : any;
+
   constructor() { }
 
   ngOnInit(): void {
     this.passing_data();
   }
+  
+    
+  data:any;
   passing_data(){
     let user_details = (localStorage.getItem('user'));
     const data =user_details != null ? JSON.parse(user_details) : [];
@@ -20,5 +25,7 @@ export class PassengerDetailsComponent implements OnInit {
     this.userName = data.username;        
     
   }
-  
+  next_page(){
+    window.location.href = "booking"
+  }
 }

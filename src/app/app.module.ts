@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { BookingComponent } from './booking/booking.component';
 import { PassengerDetailsComponent } from './passenger-details/passenger-details.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PassengerDetailsComponent } from './passenger-details/passenger-details
     HomeComponent,
     RegisterComponent,
     BookingComponent,
-    PassengerDetailsComponent
+    PassengerDetailsComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

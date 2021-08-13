@@ -1,13 +1,24 @@
-body  
-{  
-    margin: 0;  
-    padding: 0;  
+.header{
+    float: right;
+    padding-right: 15px;
+    font-size: 18px;
+}
+.nav_item{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
     
-    background-repeat: 100%; 
-    font-family: serif;  
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);    
     color: white;
-}  
-
+    
+}
+.nav_item:hover{
+    background-color:#04AA6D ;
+}
 
 .page_title{
     color: black;

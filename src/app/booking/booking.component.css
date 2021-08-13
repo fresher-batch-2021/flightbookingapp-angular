@@ -1,20 +1,32 @@
-body{
-    
-    color: white;
-    padding: 0;
-    margin:auto;
-    font-family: Arial, Helvetica, sans-serif;
+.header{
+    float: right;
+    padding-right: 15px;
+    font-size: 18px;
 }
+.nav_item{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);    
+    color: white;
+    
+}
+.nav_item:hover{
+    background-color:#04AA6D ;
+}
+
+
 .depature_information{
     text-align: center;
     color: black;
 }
-.airline{
-    text-align: center;
-    background-color: #04AA6D;
-    
-    padding: 10px;
-}
+
+
 .fieldset_table{
     background: rgba(0, 0, 0, 0.5); 
     width: 1000px;    
